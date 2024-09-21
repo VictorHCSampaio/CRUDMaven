@@ -1,0 +1,76 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 18 de set. de 2024, 14:22:19
+    Author     : victor
+*/
+
+body{
+    background-color: rgb(22,22,22);
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-family: arial;
+}
+
+h2{
+    font-family: arial;
+    color: white;
+    font-size: 14px;
+}
+
+.botao{
+    border-radius: 15px;
+    padding: 10px 10px;
+    border: 1px solid rgb(240, 240, 240);
+    color: white;
+    background-color: #1DB954;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgb(40, 40, 40);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.botao:focus{
+    border-color: #45a049;
+    box-shadow: 2px 2px 8px rgb(30, 30, 30); 
+}
+
+.cor{
+    text-align: center;
+    font-family: arial;
+    color: white;
+}
+
+.center-img{
+    text-align: center;
+    vertical-align: middle;    
+}
+
+.txt{
+    padding: 8px 16px;
+    margin: 8px 0;
+    background-color: rgb(24, 30, 42);
+    border-radius: 6px;  
+    box-shadow: 2px 2px 5px rgb(40, 40, 40);
+    color: white;
+}
+
+.img{
+    display: inline-block;
+}
+
+.style-class{
+    width: 70%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    box-shadow: 0 5px 10px rgb(50, 50, 50);
+    border-color: white;
+    background-color: rgb(24, 30, 42);
+    border-radius: 8px;
+}
+

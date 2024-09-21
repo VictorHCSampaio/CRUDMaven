@@ -20,9 +20,9 @@
         <%
             Produto prod = (Produto) request.getAttribute("produto");
         %>
-        
+        <h2>
         <form action = "ManterProduto" method="GET">
-            <h2>ID........: <%out.print(prod.getId());%> <input type="hidden" name="txtid" value="<%out.print(prod.getId());%>" class="txt">  <BR>
+            ID........: <%out.print(prod.getId());%> <input type="hidden" name="txtid" value="<%out.print(prod.getId());%>" class="txt">  <BR>
                 
                 <label for="txtdescricao">Descrição:</label>
                 <input placeholder= "Digite a descricão" class="txt" type="text" name="txtdescricao" value="<%out.print(prod.getDescricao());%>">  <BR>
@@ -51,8 +51,9 @@
                 <label for="txtcor">Cor:</label>
                 <input placeholder= "Digite a cor" class="txt" type="txt" name="txtcor" value= "<%out.print(prod.getCor());%>"> <BR>            
             <input type="submit" name="op" value="ATUALIZAR" class="botao">
-            </h2>
-        </form>        
+            
+        </form> 
+        </h2>    
     </center>            
     </body>
 </html>

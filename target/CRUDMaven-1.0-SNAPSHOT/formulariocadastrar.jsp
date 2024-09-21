@@ -47,9 +47,10 @@
                 
                 <label for="txtcor">Cor:</label>
                 <input placeholder= "Digite a cor" class="txt" type="txt" name="txtcor" value=> <BR>
-                
-                <input type="submit" name="op" value="CADASTRAR" class="botao">
-            </form>
+                                
+                    <input type="submit" name="op" value="CADASTRAR" class="botao"> 
+                    <input type="submit" name="op" value="CONSULTARTODOS" class="botao">                
+            </form>          
     </h2>
     </center>    
     </body>

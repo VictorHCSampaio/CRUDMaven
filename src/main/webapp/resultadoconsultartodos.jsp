@@ -20,7 +20,10 @@
         
         <%
             List<Produto> lprod = (List<Produto>) request.getAttribute("lprod");
-        %>
+        %>                
+        
+        <script> alert ('Consultado com sucesso')</script>
+        
         <form action="ManterProduto" method ="GET">
             <input type="text" name="txtid" placeholder="Digite o Id do Usuário" class="txt">
             <input type="submit" name="op" value="CONSULTARBYID" class="botao"><BR><BR>

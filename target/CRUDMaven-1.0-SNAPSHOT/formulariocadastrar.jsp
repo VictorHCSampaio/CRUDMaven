@@ -20,7 +20,7 @@
             Produto prod = (Produto) request.getAttribute("produto");
         %>
     <h2>    
-            <form action = "ManterProduto" method="POST" accept-charset="UTF-8">                
+            <form action = "ManterProduto" method="GET">                
                 <label for="txtdescricao">Descrição:</label>
                 <input placeholder= "Digite a descricão" class="txt" type="text" name="txtdescricao" value=>  <BR>
                 

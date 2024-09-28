@@ -21,8 +21,7 @@
         <%
             List<Produto> lprod = (List<Produto>) request.getAttribute("lprod");
         %>                
-        
-        <script> alert ('Consultado com sucesso')</script>
+                
         
         <form action="ManterProduto" method ="GET">
             <input type="text" name="txtid" placeholder="Digite o Id do Usuário" class="txt">
@@ -56,16 +55,26 @@
                 
                 
                 <td class="center-img"><a href="ManterProduto?op=EDITAR&txtid=<%out.print(prod.getId());%>"><img src="imagens/edit01.png" width="30" height="30" class="img"></a></td>
-           
                 
-                <td class="center-img"><a href="ManterProduto?op=DELETAR&txtid=<%out.print(prod.getId());%>"><img src="imagens/trash01.jpg" width="30" height="30" class="img"></a></td>
-                
+                <td class="center-img"><button onclick="confirmarAcao(<%out.print(prod.getId());%>)"> <img src="imagens/trash01.jpg" width="30" height="30" class="img"></button></td>                        
+                           
+        <script>
+            function confirmarAcao(id) {
+            var confirmacao = confirm("Você tem certeza que deseja continuar?");
+            if (confirmacao) {
+                alert("Você deletou o produto de id: "+id);
+                window.location.href="/CRUDMaven/ManterProduto?op=DELETAR&txtid="+id;
+            } else {
+                alert("Você cancelou a ação.");                
+            }
+        } 
+        </script>   
             </tr>                                        
             <%}%>
         </table><br>
         
         <td><a href="ManterProduto?op=NOVO"><input type="submit" name="op" value="NOVO" class="botao"></a></td>
          
-    </center>
+    </center>         
 </body>
 </html>
